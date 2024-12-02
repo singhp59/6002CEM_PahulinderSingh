@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FitnessTrackerApp.Pages.HomePage">
+	<StackLayout Padding="20">
+		<Label Text="Welcome to Fitness Tracker"
+               FontSize="24"
+               HorizontalOptions="Center" />
+
+		<Frame BackgroundColor="LightGray" Padding="10" CornerRadius="10">
+			<StackLayout>
+				<Label Text="Today's Summary" FontSize="18" />
+				<Label Text="Calories Burned: 500 kcal" />
+				<Label Text="Workouts: 2" />
+			</StackLayout>
+		</Frame>
+
+		<Button Text="Log Workout" Command="{Binding NavigateToWorkoutLogCommand}" />
+		<Button Text="View Progress" Command="{Binding NavigateToProgressCommand}" />
+	</StackLayout>
+</ContentPage>
